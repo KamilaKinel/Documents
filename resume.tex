@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez (altered slightly by me)
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Kamila Kinel} \\ \vspace{1pt}
+    \vspace{5pt}
+    \small \raisebox{-0.1\height}\faPhone\ 702-767-9298 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{kinelk1@unlv.nevada.edu}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/kamila-kinel}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/KamilaKinel}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Nevada, Las Vegas}{Expected Graduation: Fall 2024}
+      {Bachelor of Science in Computer Science}{}
+  \resumeSubHeadingListEnd
+      \vspace{0.5pt}
+      \emph{Bachelor of Science in Mathematics}
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Data Structures} $|$ \emph{C++}}{}
+          \resumeItemListStart
+            \resumeItem{Developed algorithms which utilized stacks, queues, linked lists, heaps, hash tables, hash graphs, and binary trees.}
+            \resumeItem{Learned the fundamentals of time complexity and Big-O notation through practical application in coding projects.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Data Analysis and Visualization} $|$ \emph{Jupyter Notebook, Python} }{}
+          \resumeItemListStart
+            \resumeItem{Learned different methods of data analysis including traditional statistical methods, as well as contemporary machine learning and artificial intelligence techniques.}
+            \resumeItem{Developed essential skills for dealing with large data sets.}
+            \resumeItem{Gained familiarity with tools and libraries for performing data analysis in Python.}
+            \resumeItem{Practiced organizing and presenting data for sharing and collaboration.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Linear Algebra}}{}
+          \resumeItemListStart
+            \resumeItem{Evaluated and used determinants to find the inverse of a matrix and to solve linear system.}
+            \resumeItem{Learned the conditions under which a linear system has no solution, infinitely many solution, or unique solutions.}
+            \resumeItem{Developed MATLAB code to solve a variety of linear algebra problems, including matrix operations and systems of linear equations.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+          \resumeProjectHeading
+          {\textbf{Gaming Weapon Inventory Simulator} $|$ \emph{C++}}{}
+          \resumeItemListStart
+            \resumeItem{Employed object-oriented programming techniques to simulate the back-end of a weapon inventory system for games, similar to Fortnite.}
+            \resumeItem{Utilized inheritance to create a hierarchy of inventory items, enhancing code modularity and reusability.}
+            \resumeItem{Employed pointers and dynamic memory allocation for efficient memory management.}
+              \vspace{-13pt}
+          \resumeItemListEnd 
+      \resumeProjectHeading
+          {\textbf{Website: Macro Calculator} $|$ \emph{HTML/CSS, Java}}{}
+          \resumeItemListStart
+            \resumeItem{Currently working closely with a team member to design, develop, and launch a website dedicated to fitness and nutrition. }
+            \resumeItem{Utilized technologies such as HTML, CSS, JavaScript, to design and develop the website's user interface and functionality.}
+            \resumeItem{Continuously working on a dynamic macro nutrient calculator that will help users meet their fitness goals as well as track daily nutritional intakes.}
+            \resumeItem{Participating in regular code reviews and discussions with the project partner to refine and enhance the project.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {C++ Tutor}{Fall 2022 -- Present}
+      {Freelance}{Remote}
+      \resumeItemListStart
+        \resumeItem{Met with students one on one and explained core concepts such as pointers, structures, classes, ect.}
+        \resumeItem{Helped with debugging code and improving algorithm efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Nanny}{August 2019 --Present}
+      {Private Families}{Las Vegas, Nevada}
+      \resumeItemListStart
+        \resumeItem{Provided part-time care to children ranging in age from infants to 8 years old.}
+        \resumeItem{Designed educational activities based on play-based learning research, encompassing concepts like basic circuit board design, a variety of science experiments, and hands-on building projects.}
+        \resumeItem{Assisted children with homework and school projects.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, MIPS, X86, HTML/CSS, Python, R, MATLAB} \\
+     \textbf{Developer Tools}{: VS Code, Jupyter Notebook, Git} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+\end{document}
